@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winform_app", "winform_app\winform_app.csproj", "{5D0A5326-88C9-441D-BD3A-18DAE49328AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{BF065090-7F79-4B6D-80D0-3F8A36772781}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D0A5326-88C9-441D-BD3A-18DAE49328AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D0A5326-88C9-441D-BD3A-18DAE49328AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D0A5326-88C9-441D-BD3A-18DAE49328AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D0A5326-88C9-441D-BD3A-18DAE49328AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4B95D01-7B6D-49C6-9E09-50D5D05E6E06}
+	EndGlobalSection
+EndGlobal
