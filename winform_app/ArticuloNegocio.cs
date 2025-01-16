@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient; //declaer la uilizacion de esta libreria.
+using System.Data.SqlClient; //declare la utilizacion de esta libreria.
 
 namespace winform_app
 {
@@ -18,9 +18,27 @@ namespace winform_app
 
             try
             {
-                conexion.ConnectionString = "server=DESKTOP-J4TSABP\\SQLEXPRESS; database=tpfinaldb; integrated security = true";
+                conexion.ConnectionString = "server=.\\SQLEXPRESS; database=tpfinaldb; integrated security=true";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText
+                comando.CommandText = "Select Codigo, Nombre, Descripcion, Precio From ARTICULOS";
+                comando.Connection = conexion;
+
+                conexion.Open();
+                lector = comando.ExecuteReader(); //tabla virtual.
+
+                while (lector.Read())  //si pudo leer devuelve true y selecciona el puntero en la primera fila.
+                {
+                    Articulo aux =  new Articulo();
+                    aux.codigo = (string)lector["Codigo"];
+                    aux.nombre = (string)lector["Nombre"];
+                    aux.descripcion = (string)lector["Descripcion"];
+                    aux.precio = (decimal)lector["Precio"];
+
+                    lista.Add(aux);
+
+                }
+
+                conexion.Close();
                 return lista; //devuelve la lista de la base de datos.
 
 

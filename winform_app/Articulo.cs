@@ -8,12 +8,12 @@ namespace winform_app
 {
      class Articulo
     {
-        public int codArticulo { get; set; }
+        public string codigo { get; set; }
         public string nombre { get; set; }
         public string descripcion { get; set; }
         public string marca { get; set; }
         public string categoria { get; set; }
-        public int precio { get; set; }
+        public decimal precio { get; set; }
 
     }
 }
